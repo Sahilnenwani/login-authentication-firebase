@@ -91,3 +91,19 @@ span{
 #register{
     left:50px;
 }
+
+
+
+@media (max-width:480px)
+    {
+        .hero{
+            height: 100%;
+            width: 100%;
+            background-color:#fff;
+            background-position: cover;
+            background-size: cover;
+            position: absolute;
+        
+        }
+        
+    }

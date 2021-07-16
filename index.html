@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login and Signup page</title>
-    
+
 <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
@@ -38,7 +38,7 @@
                 <input type="email" class="input-field" id="login-email" placeholder="Email" required>
                 <input type="password" class="input-field" id="login-password" placeholder="Password" required>
                 <input type="checkbox" class="check-box" ><span>Remember password</span> 
-                <button type="submit" class="submit-btn">Log in</button>
+                <button type="submit" class="submit-btn" onclick="loginData(); return false;">Log in</button>
             </form>
             <form id="register" class="input-group hide">
                 <input type="text" class="input-field" id="register-Name" placeholder="Full Name" required>
@@ -46,10 +46,13 @@
                 <input type="email" class="input-field" id="register-email" placeholder="Email" required>  
                 <input type="password" class="input-field" id="register-password" placeholder="Password" required>
                 <input type="checkbox" class="check-box" ><span>I agree to the terms & Conditions</span>
-                <button type="submit" class="submit-btn">Register</button>
+                <button type="submit" class="submit-btn" onclick="registerData()">Register</button>
             </form>
         </div>
     </div>
-<script src="./app.js"></script>
+    
+   
+        <script src="./app.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
