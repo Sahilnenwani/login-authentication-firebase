@@ -24,6 +24,8 @@
   firebase.initializeApp(firebaseConfig);
 </script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
 </head>
 <body>
     <div class="hero">
@@ -38,7 +40,7 @@
                 <input type="email" class="input-field" id="login-email" placeholder="Email" required>
                 <input type="password" class="input-field" id="login-password" placeholder="Password" required>
                 <input type="checkbox" class="check-box" ><span>Remember password</span> 
-                <button type="submit" class="submit-btn" onclick="loginData(); return false;">Log in</button>
+                <button type="submit" class="submit-btn" id="loginbtn" >Log in</button>
             </form>
             <form id="register" class="input-group hide">
                 <input type="text" class="input-field" id="register-Name" placeholder="Full Name" required>
@@ -46,13 +48,13 @@
                 <input type="email" class="input-field" id="register-email" placeholder="Email" required>  
                 <input type="password" class="input-field" id="register-password" placeholder="Password" required>
                 <input type="checkbox" class="check-box" ><span>I agree to the terms & Conditions</span>
-                <button type="submit" class="submit-btn" onclick="registerData()">Register</button>
+                <button type="submit" class="submit-btn" id="registerbtn" >Register</button>
             </form>
         </div>
     </div>
     
    
         <script src="./app.js"></script>
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+       
 </body>
 </html>
