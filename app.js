@@ -20,7 +20,7 @@ var registerData=()=>{
         Contact:regContact.value,
         key:key
     }
-    document.write(firebasedataofreg)
+   
     firebase.database().ref("User-Account/"+key).set(firebasedataofreg);
     // firebase.database.ref()
 
